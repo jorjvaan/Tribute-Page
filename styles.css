@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+body {
+    font-family: Inconsolata, sans-serif;
+    display: flex;
+    background-color: #c5e7fa;
+    align-items: center;
+    margin: auto;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+#img-caption {
+    text-align: justify;
+}
+
+#img-div {
+    padding: 1rem;
+    padding-inline: 15rem;
+}
+
+.image:hover {
+    filter: brightness(0.5);
+    transform: scale(95%);
+}
+
+.image {
+    width: 45%;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+#tribute-info {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-inline: 15rem;
+}
+
+.discography-div {
+    text-align: justify;
+    padding: 1rem;
+    padding-inline: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.discography:hover {
+    filter: brightness(0.5);
+    transform: scale(95%);
+}
+
+.discography {
+    transition: 0.3s;
+}
+
+.discography-paragraph {
+    text-align: justify;
+    padding-inline: 15rem;
+}
+
+#image:hover{
+    animation-name: marco;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes marco {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        scale: 0;
+    }
+
+    75% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 2;
+    }
+
+}
